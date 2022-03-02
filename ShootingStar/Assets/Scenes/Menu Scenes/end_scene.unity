@@ -168,6 +168,7 @@ MonoBehaviour:
   gameLevels:
   - level_00
   - level_01
+  gameLevelsCount: 0
   nextLevel: 0
   gameState: 0
   playerWon: 0
@@ -596,7 +597,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.011764706, g: 0.34509805, b: 0.54901963, a: 1}
+  m_Color: {r: 0.043137256, g: 0, b: 0.30980393, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -903,7 +904,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Game Designed by : Your Name Here'
+  m_Text: 'Game Designed by : Thomas Nguyen'
 --- !u!222 &1325284406
 CanvasRenderer:
   m_ObjectHideFlags: 0
