@@ -1,3 +1,14 @@
+/****
+ * Created by: Thomas Nguyen
+ * Date Created: February 28, 2022
+ * 
+ * 
+ * Last Edited by: Thomas Nguyen
+ * Lasted Edited: March 7, 2022
+ * Description: Controls the cannon and the projectiles shot
+ * 
+****/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
