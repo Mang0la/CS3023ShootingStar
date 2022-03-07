@@ -166,12 +166,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d49296548f6742498c9896ffedace25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameTitle: Untitled Game
-  gameCredits: Made by Me
+  gameTitle: Shooting Star
+  gameCredits: Made by Thomas Nguyen
   copyrightDate: Copyright 2022
   recordHighScore: 1
   defaultHighScore: 1000
-  numberOfLives: 3
+  numberOfLives: 0
   levelLost: 0
   defaultEndMessage: Game Over
   looseMessage: You Loose

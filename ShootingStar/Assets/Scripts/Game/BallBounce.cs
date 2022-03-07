@@ -15,13 +15,13 @@ using UnityEngine;
 
 public class BallBounce : MonoBehaviour
 {
-    private Rigidbody2D rb;
+    private Rigidbody rb;
 
     Vector3 lastVelocity;
 
     private void Awake()
     {
-        rb = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody>();
     }
 
     // Start is called before the first frame update
@@ -36,7 +36,7 @@ public class BallBounce : MonoBehaviour
         lastVelocity = rb.velocity;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter(Collision collision)
     {
         var speed = lastVelocity.magnitude;
         var direction = Vector3.Reflect(lastVelocity.normalized, collision.contacts[0].normal);

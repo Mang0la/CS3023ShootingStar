@@ -63,7 +63,7 @@ public class HUDCanvas : MonoBehaviour
     {
         //if texbox exsists update value
         if (levelTextbox) { levelTextbox.text = "Level " + level + "/" + totalLevels; }
-        if (livesTextbox) { livesTextbox.text = "Lives " + lives; }
+        if (livesTextbox) { livesTextbox.text = "Shots Taken " + lives; }
         if (scoreTextbox) { scoreTextbox.text = "Score " + score; }
         if (highScoreTextbox) { highScoreTextbox.text = "High Score " + highscore; }
 

@@ -44,8 +44,8 @@ public class GameManager : MonoBehaviour
     #endregion
 
     [Header("GENERAL SETTINGS")]
-    public string gameTitle = "Untitled Game";  //name of the game
-    public string gameCredits = "Made by Me"; //game creator(s)
+    public string gameTitle = "Shooting Star";  //name of the game
+    public string gameCredits = "Made by Thomas Nguyen"; //game creator(s)
     public string copyrightDate = "Copyright " + thisDay; //date cretaed
 
     [Header("GAME SETTINGS")]
