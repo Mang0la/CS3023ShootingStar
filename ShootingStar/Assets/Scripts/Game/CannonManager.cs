@@ -15,6 +15,8 @@ using UnityEngine;
 
 public class CannonManager : MonoBehaviour
 {
+
+    [Header("Set in Inspector")]
     public GameObject cometPrefab;
     public Transform firePoint;
 
@@ -69,6 +71,7 @@ public class CannonManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if (Input.GetMouseButtonDown(0))
         {
             mousePress = true;
@@ -80,6 +83,7 @@ public class CannonManager : MonoBehaviour
             cometShoot();
         }
 
+        // translates the mouse position to 2D and makes the cannon follow the x and y direction
         Vector3 mousePosition = Input.mousePosition;
         mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
         Vector2 direction = new Vector2(mousePosition.x - transform.position.x,
@@ -129,6 +133,7 @@ public class CannonManager : MonoBehaviour
 
     private void cometShoot()
     {
+        // Fires projectile, with additional force depending on the distance of the mouse from the cannon
         GameObject comet = Instantiate(cometPrefab, firePoint.position, gameObject.transform.rotation);
 
         Rigidbody rb = comet.GetComponent<Rigidbody>();

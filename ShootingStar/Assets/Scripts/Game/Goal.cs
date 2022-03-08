@@ -9,6 +9,7 @@
  * 
 ****/
 
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -16,9 +17,8 @@ using UnityEngine.UI;
 
 public class Goal : MonoBehaviour
 {
-
+    //variables
     GameManager gm;
-
     static public bool goalMet = false;
 
     void OnTriggerEnter(Collider other)
@@ -36,10 +36,9 @@ public class Goal : MonoBehaviour
             mat.color = c;
 
             // Add to the score depending on the amount of shots taken
-            gm.Score += 5; //( 1 * (1000 - gm.Lives) );
-            Debug.Log("test");
+            gm.Score +=  1 * Math.Abs(10000 - ( 100 * gm.Lives ) );//1 / Math.Pow(2, gm.Lives); 
 
-
+            gm.nextLevel = true;
         }
     }
 
