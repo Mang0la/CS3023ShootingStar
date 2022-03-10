@@ -219,6 +219,7 @@ public class GameManager : MonoBehaviour
             SceneManager.LoadScene(gameLevels[loadLevel]); //load next level
 
         }else{ //if we have run out of levels go to game over
+            playerWon = true;
             GameOver();
         } //end if (gameLevelsCount <=  gameLevels.Length)
 
