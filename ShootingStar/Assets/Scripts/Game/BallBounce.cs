@@ -15,8 +15,9 @@ using UnityEngine;
 
 public class BallBounce : MonoBehaviour
 {
-    private Rigidbody rb;
 
+    [Header("Hide in Inspector")]
+    private Rigidbody rb;
     Vector3 lastVelocity;
 
     private void Awake()
@@ -38,9 +39,11 @@ public class BallBounce : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        // obtains the speed of the ball before impact
         var speed = lastVelocity.magnitude;
         var direction = Vector3.Reflect(lastVelocity.normalized, collision.contacts[0].normal);
 
+        // velocity of the ball is applied after it collides, allowing it to bounce
         rb.velocity = direction * Mathf.Max(speed, 0f);
 
     }

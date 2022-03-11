@@ -36,8 +36,7 @@ public class Goal : MonoBehaviour
             mat.color = c;
 
             // Add to the score depending on the amount of shots taken
-            gm.Score +=  1 * Math.Abs(10000 - ( 100 * gm.Lives ) );//1 / Math.Pow(2, gm.Lives); 
-
+            gm.Score +=  1 * Math.Abs(10000 - ( 100 * gm.Lives ) ); 
             gm.nextLevel = true;
         }
     }

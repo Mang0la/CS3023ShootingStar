@@ -17,6 +17,8 @@ public class Comet : MonoBehaviour
 {
 
     GameManager gm;
+
+    [Header("Set in Inspector")]
     public float bottomY = -55f;
     static public int shotsTaken;
 
@@ -29,6 +31,8 @@ public class Comet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        // destroys projectiles if they fall below the camera's view
         if (transform.position.y < bottomY)
         {
             Destroy(this.gameObject);
